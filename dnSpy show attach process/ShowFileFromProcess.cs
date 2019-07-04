@@ -1,5 +1,4 @@
-﻿using dnlib.DotNet;
-using dnSpy.Contracts.App;
+﻿using dnSpy.Contracts.App;
 using dnSpy.Contracts.Debugger;
 using dnSpy.Contracts.Documents;
 using dnSpy.Contracts.Documents.Tabs;
@@ -7,7 +6,6 @@ using dnSpy.Contracts.Documents.TreeView;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
-using System.Diagnostics;
 using System.Linq;
 
 namespace dnSpy_show_attach_process {
@@ -60,15 +58,15 @@ namespace dnSpy_show_attach_process {
             var doc = DsDocumentInfo.CreateDocument(filename);
             var idoc = documentTabService.DocumentTreeView.DocumentService.CreateDocument(doc, filename);
             var node = documentTabService.DocumentTreeView.CreateNode(null, idoc);
-            
+
             currentDoc = node;
 
             var dis = appWindow.MainWindow.Dispatcher; // application crashes when it isn't run from the main thread
             dis.BeginInvoke(System.Windows.Threading.DispatcherPriority.Input, new Action(() => {
                 documentTabService.DocumentTreeView.AddNode(node, -1); // most likely down at the bottem of the list
-                
+
                 var docNode = documentTabService.DocumentTreeView.FindNode(node);
-                
+
                 docNode.TreeNode.TreeView.SelectItems(new List<DocumentTreeNodeData>() { docNode }.AsEnumerable());
             }));
         }
@@ -78,7 +76,7 @@ namespace dnSpy_show_attach_process {
                 if (currentDoc != null) {
                     documentTabService.DocumentTreeView.Remove(new List<DsDocumentNode>() { currentDoc }.AsEnumerable());
                 }
-            }catch { }
+            } catch { }
         }
     }
 }
