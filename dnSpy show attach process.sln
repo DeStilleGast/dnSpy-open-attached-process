@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnSpy show attach process", "dnSpy show attach process\dnSpy show attach process.csproj", "{92F5E2ED-E59D-499A-8894-132652049C73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92F5E2ED-E59D-499A-8894-132652049C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92F5E2ED-E59D-499A-8894-132652049C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92F5E2ED-E59D-499A-8894-132652049C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92F5E2ED-E59D-499A-8894-132652049C73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83CF61E6-2B2D-4342-9F36-432DD8A89435}
+	EndGlobalSection
+EndGlobal
