@@ -27,7 +27,6 @@ namespace dnSpy_show_attach_process {
         private DsDocumentNode currentDoc;
 
         public void OnStart(DbgManager dbgManager) {
-            //MsgBox.Instance.Show($"{string.Join("\n", dbgManager.Processes.ToList().Select(p => p.Filename))}");
             dbgManager.CurrentProcessChanged += DbgManager_CurrentProcessChanged;
             dbgManager.DelayedIsRunningChanged += DbgManager_DelayedIsRunningChanged;
         }
