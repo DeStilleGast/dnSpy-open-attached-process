@@ -35,7 +35,8 @@
     <Reference Include="dnlib">
       <HintPath>D:\Tools\Net tools\DNSpy\dnlib.dll</HintPath>
     </Reference>
-    <Reference Include="dnSpy.Contracts.Debugger">
+    <Reference Include="dnSpy.Contracts.Debugger, Version=6.0.4.0, Culture=neutral, PublicKeyToken=9813e10cffb0cdd6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\Tools\Net tools\DNSpy\dnSpy.Contracts.Debugger.dll</HintPath>
     </Reference>
     <Reference Include="dnSpy.Contracts.DnSpy">
